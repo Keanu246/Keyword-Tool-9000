@@ -1,0 +1,26 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/Keanu246/Keyword-Tool-9000"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-ruby"
+    }
+  ],
+  "description": "This is the app that will enables keywords for SEO.",
+  "env": {
+    "tool9000": "528",
+    "keywords9000": "782"
+  },
+  "formation": {
+  },
+  "name": "Keyword-Tool-9000",
+  "scripts": {
+    "postdeploy": "bin/script",
+    "pr-predestroy": "bin/keyword"
+  },
+  "stack": "heroku-18"
+}
